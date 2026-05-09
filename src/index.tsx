@@ -22,9 +22,11 @@ export const editorConfig: Configuration = {
 
   featureFlags: {
     archiveSceneEnabled: true
-  }
+  },
 
-  // license: 'YOUR_LICENSE_KEY',
+  // Local assets for development
+  
+
 };
 
 // ============================================================================
