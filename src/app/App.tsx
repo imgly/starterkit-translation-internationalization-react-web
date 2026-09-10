@@ -19,6 +19,7 @@ import { resolveAssetPath } from '../imgly/resolveAssetPath';
 import { LocaleSwitcher, type Locale } from './LocaleSwitcher';
 import styles from './App.module.css';
 
+
 interface AppProps {
   editorConfig: Configuration;
 }
