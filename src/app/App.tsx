@@ -5,7 +5,7 @@
  * in the CE.SDK design editor. Users can switch between English and German
  * locales using the i18n runtime API.
  *
- * @see https://img.ly/docs/cesdk/js/user-interface/localization-508e20/
+ * @see https://img.ly/docs/cesdk/web/ui-styling/localization/
  */
 
 import { useCallback, useRef, useState } from 'react';
@@ -18,7 +18,6 @@ import { resolveAssetPath } from '../imgly/resolveAssetPath';
 
 import { LocaleSwitcher, type Locale } from './LocaleSwitcher';
 import styles from './App.module.css';
-
 
 interface AppProps {
   editorConfig: Configuration;
@@ -78,7 +77,7 @@ export function App({ editorConfig }: AppProps) {
     // Scene Loading
     // ============================================================================
 
-    await cesdk.load(resolveAssetPath('/assets/example-1.scene'));
+    await cesdk.loadFromURL(resolveAssetPath('/assets/example-1.scene'));
   }, []);
 
   // ============================================================================
