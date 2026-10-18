@@ -25,6 +25,7 @@ export const editorConfig: Configuration = {
   },
 
   // Local assets for development
+  
 
 };
 
